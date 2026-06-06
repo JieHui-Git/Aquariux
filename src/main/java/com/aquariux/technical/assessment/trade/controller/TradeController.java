@@ -19,12 +19,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class TradeController {
 
     private final TradeServiceInterface tradeService;
-    // Add additional beans here if needed for your implementation
 
     @PostMapping(value = "/execute", produces = "application/json")
     @Operation(summary = "Execute trade", description = "Execute a buy or sell trade for cryptocurrency pairs")
     public ResponseEntity<TradeResponse> executeTrade(@RequestBody TradeRequest tradeRequest) {
-        // TODO: How should a trading API endpoint behave?
         return ResponseEntity.ok(tradeService.executeTrade(tradeRequest));
     }
 }

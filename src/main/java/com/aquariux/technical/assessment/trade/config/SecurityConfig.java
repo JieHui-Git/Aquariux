@@ -15,7 +15,8 @@ public class SecurityConfig {
     private static final String[] DEVELOPMENT_ENDPOINTS = {
             "/swagger-ui/**",
             "/v3/api-docs/**",
-            "/h2-console/**"
+            "/h2-console/**",
+            "/error"
     };
     
     // Only for development purpose - remove in production

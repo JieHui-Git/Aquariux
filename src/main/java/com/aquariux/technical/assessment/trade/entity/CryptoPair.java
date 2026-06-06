@@ -1,7 +1,6 @@
 package com.aquariux.technical.assessment.trade.entity;
 
 import lombok.Data;
-import java.math.BigDecimal;
 
 @Data
 public class CryptoPair {
